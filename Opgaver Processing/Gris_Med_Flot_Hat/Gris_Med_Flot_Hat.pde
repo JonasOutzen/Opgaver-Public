@@ -2,6 +2,8 @@ float r = random(0, 100);
 float g = random(0, 100);
 float b = random(0, 100);
 float a = random(0, 20);
+int flyingSpeed = 1;
+int flyingHatY = 200;
 
 
 
@@ -67,20 +69,28 @@ void draw() {
   ellipse(70, 280, 3, 7);
   ellipse(90, 280, 3, 7);
 
-  //Hat
+  //Hat Modes
   ellipseMode(CENTER);
   rectMode(CENTER);
   stroke(0);
-  fill(95, 75, 50);
+  fill(0);
 
-  float penisX = random(78, 82);
-  float penisY = random (198, 202);
+  // Flyvende hat
+  flyingHatY = flyingHatY + flyingSpeed;
+  if ((flyingHatY > 200) || (flyingHatY < 0)) {
+    flyingSpeed = flyingSpeed * -1;
+  }
+  
+ //Hatten tegnet
+  rect(80, flyingHatY, 25, 127);
+  ellipse(53, flyingHatY+50, 40, 40);
+  ellipse(107, flyingHatY+50, 40, 40);
 
-  rect(penisX, penisY, 20, 100);
-  ellipse(50, 250, 40, 40);
-  ellipse(110, 250, 40, 40);
-  line(80, 150, 80, 175);
-  line(70, 175, 90, 175);
+//Hattebånd rødt
+  stroke(255, 0, 0);
+  strokeWeight(10);
+  line(70, flyingHatY+31, 90, flyingHatY+31);
+  strokeWeight(1);
 
   // Rave
   fill(r, g, b, a);
