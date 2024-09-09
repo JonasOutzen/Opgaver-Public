@@ -22,7 +22,7 @@ void draw() {
   float b = random(0, 100);
   float a = random(0, 100);
   frameRate(60);
-  background(0, 70, 80);
+  background(30+flyingHatY-80, flyingHatY-20, 80-flyingHatY);
 
   ellipseMode(CENTER);
   fill(100, 100, 0);
@@ -87,12 +87,12 @@ void draw() {
   ellipse(107, flyingHatY+50, 40, 40);
 
 //Hattebånd rødt
-  stroke(255, 0, 0);
+  stroke(255-flyingHatY, -100+flyingHatY, 200-flyingHatY);
   strokeWeight(10);
   line(70, flyingHatY+31, 90, flyingHatY+31);
   strokeWeight(1);
 
-  // Rave
+  /* Rave
   fill(r, g, b, a);
-  rect(0, 0, 1000, 1000);
+  rect(0, 0, 1000, 1000);*/
 }
