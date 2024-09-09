@@ -11,7 +11,7 @@ int lightOn;
 int botton;
 
 void setup() {
-  size(500, 500);
+  size(1000,1000);
   rectMode(CENTER);
 }
 void draw() {
@@ -19,11 +19,11 @@ void draw() {
  
   if (lightOn == 255) {
   fill(0, 255, 0);
-  rect(250, 250, 200, 100);
+  rect(width/2, height/2, width/3, height/3);
   textAlign(CENTER, CENTER);
   textSize(100);
   fill(0);
-  text("ON",250,250);
+  text("ON",width/2,height/2);
  
   
   }
@@ -31,7 +31,7 @@ void draw() {
 }
 
 void mousePressed() {
-  if (mouseX > 150 && mouseX < 350 && mouseY < 300 && mouseY > 200) {
+  if (mouseX > width / 3 && mouseX < width-width / 3 && mouseY > height / 3 && mouseY < height-height / 3) {
     if (lightOn==255) {
       lightOn=0;
     } else {
