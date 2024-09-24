@@ -26,5 +26,5 @@ void draw() {
   myPig.drawHat();
   myPig.hatMovement();
 
-  // Græsset - dette er nødt til at ligge i bunden, for at grisen ikke er forest.
+
 }
