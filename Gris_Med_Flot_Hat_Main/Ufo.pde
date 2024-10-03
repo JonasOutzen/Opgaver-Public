@@ -1,23 +1,23 @@
 class UFO {
 
   void drawUFO() {
-  /* UFO - bund */
-    fill(50, 20, 80);  // Lys grå
-    ellipse(pigX + 80, pigY + 410, 200, 50);  // UFO's bund er justeret til at være lidt under grisen
+  /* UFO */
+    fill(50, 20, 80); 
+    ellipse(pigX + 80, pigY + 410, 200, 50);  
 
-    /* UFO - lys */
-    fill(20, 100, 100, 50);  // Transparant gul lysstråle
-    triangle(pigX + 40, pigY + 420, pigX + 120, pigY + 420, pigX + 80, pigY + 500);  // Justeret lyskeglen til at være korrekt placeret
+    /* UFO - lightbeam */
+    fill(20, 100, 100, 50);  // Transparant blue Lightbeam
+    triangle(pigX + 40, pigY + 420, pigX + 120, pigY + 420, pigX + 80, pigY + 500); 
     
-    /* UFO - ekstra detaljer */
+    /* UFO - extra detail */
     fill(50, 20, 60);  // Mørkere grå til detaljer
-    ellipse(pigX + 80, pigY + 405, 190, 40);  // En ekstra skygge-effekt på bunden
+    ellipse(pigX + 80, pigY + 405, 190, 40); 
 
-    /* UFO - ekstra lys */
-    fill(20, 100, 80);  // Gule lys på siden
-    ellipse(pigX + 40, pigY + 400, 10, 10);  // Venstre Lys
-    ellipse(pigX + 80, pigY + 410, 10, 10);  // Midt Lys
-    ellipse(pigX + 120, pigY + 400, 10, 10);  // Højre Lys
+    /* UFO - lights */
+    fill(20, 100, 80);  // Yellow
+    ellipse(pigX + 40, pigY + 400, 10, 10);  // Left light
+    ellipse(pigX + 80, pigY + 410, 10, 10);  // Mid Light
+    ellipse(pigX + 120, pigY + 400, 10, 10);  // Right Light
 
   }
 }

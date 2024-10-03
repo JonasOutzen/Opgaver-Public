@@ -1,7 +1,7 @@
 class Grass {
 
   void drawGrass() {
-    /* Græs */
+    /* Grass */
     rectMode(CORNER);
     fill(0, 80, 0);
     noStroke();

@@ -7,22 +7,22 @@ void setup() {
   size(700, 700);
   colorMode(RGB, 100);
 
-  /* Tekst forsøg - lav evt. array med tekst*/
+//Printing Hej med dig 
   println("hej med dig");
 }
 
 void draw() {
-  //Baggrundsdisplay - sol og baggrund, der skifter farve.
+  //Background display - sun and colorchanging background
   myBackground.backgroundChange();
   myBackground.drawSun();
   myGrass.drawGrass();
 
-  // Grisen - og bevægelse
+  // Pig and its movement
   myPig.pigMovement(); // Brug her W, A, S, D til at bevæge grisen
   myPig.drawPig();
   myUFO.drawUFO();
 
-  // Hat og bevægelse
+  // Hat and its movement
   myPig.drawHat();
   myPig.hatMovement();
 

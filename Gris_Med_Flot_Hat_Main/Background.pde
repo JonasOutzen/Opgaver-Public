@@ -1,14 +1,12 @@
 class Background {
 
   void backgroundChange() {
-
-
     background(30+flyingHatY-80, 20, 80-flyingHatY);
   }
 
 
   void drawSun() {
-    // sol
+    // Sun
     ellipseMode(CENTER);
     strokeWeight(2);
     stroke(0);
